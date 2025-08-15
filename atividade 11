@@ -1,0 +1,28 @@
+programa
+{
+	
+inteiro cidadeA = 0
+	inteiro cidadeB = 0
+	inteiro anos = 0
+	real taxaA,taxaB
+	funcao inicio()
+	{
+     escreva("escreva a populacao da menor cidade: ")
+     leia(cidadeA)
+     escreva("escreva a taxa de crescimento dela: ")
+     leia(taxaA)
+
+     escreva("escreva a populacao da maior cidade: ")
+     leia(cidadeB)
+     escreva("escreva a taxa de crescimento dela: ")
+     leia(taxaB)
+	
+		enquanto (cidadeA < cidadeB){
+			cidadeA = cidadeA + (cidadeA*(taxaA/100))
+			cidadeB = cidadeB + (cidadeB*(taxaB/100))
+			anos++
+		}
+ 		escreva("a menor cidade precisa de ",anos," anos para passar ou igualar a maior cidade.")
+		
+	}
+}
