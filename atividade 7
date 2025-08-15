@@ -1,0 +1,22 @@
+programa
+{
+	
+inteiro nota
+	logico validade = falso
+	funcao inicio()
+	{
+		enquanto(validade == falso ){
+		escreva("escolha uma nota entre 0 e 10 ")
+		leia(nota)
+
+		se(nota < 0 ou nota > 10){
+			escreva("a nota escolhida eh invalida! ")
+			validade = falso 
+		}
+		senao{
+			escreva("nota registrada!!")
+			pare
+		}
+	}
+}
+}
