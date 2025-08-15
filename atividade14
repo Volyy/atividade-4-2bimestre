@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro tabuada
+		escreva("Diga um numero entre 1 a 10")
+		leia(tabuada)
+		escreva("TABUADA DO ", tabuada, "\n")
+		para(inteiro i = 0; i <= 10; i++)
+		{
+			escreva(i, "x", tabuada, "=", i * tabuada, "\n")
+		}
+	}
+}
