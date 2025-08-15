@@ -1,0 +1,31 @@
+programa
+{
+	inclua biblioteca Texto --> t
+	
+ 
+	cadeia nome = ""
+	inteiro salario,idade
+	funcao inicio()
+	{
+			escreva("digite o seu nome: ")
+			leia(nome)
+			enquanto(t.numero_caracteres(nome) < 3){
+				escreva("nome invalido! tente novamente: ")
+				leia(nome)
+				
+			}
+			escreva("insira sua idade: ")
+			leia(idade)
+			enquanto(idade < 0 ou idade > 150){
+				escreva("idade invalida! tente novamente: ")
+				leia(idade)
+			}
+			escreva("insira seu salario: ")
+			leia(salario)
+			enquanto(salario < 0 ){
+				escreva("salario invalido! tente novamente: ")
+				leia(salario)
+			}
+			escreva("dados registrados!!")
+		}
+	}
