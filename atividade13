@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numeros[5], soma = 0, media
+		
+		para(inteiro i = 0; i <= 4; i++)
+		{
+		escreva("Me diga um numero: ")
+		leia(numeros[i])
+		}
+		para(inteiro i = 0; i <= 4; i++)
+		{
+		soma = soma + numeros[i]
+		}
+		media = soma / 5
+		escreva("A soma de todos os numeros da lista eh ", soma, " e a media eh ", media)
+	}
+	
+	
+}
