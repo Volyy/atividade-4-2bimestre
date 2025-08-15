@@ -1,0 +1,21 @@
+programa
+{
+	
+logico senhasegura = falso
+	cadeia senha
+	funcao inicio()
+	{
+		enquanto(senhasegura == falso){
+			escreva("crie uma senha: ")
+			leia(senha)
+
+			se(senha == "12345" ou senha=="admin" ou senha == "senha" ou senha =="xuxa"){
+				escreva("senha insegura!! ")
+			}
+			senao{
+				escreva("senha registrada!! ")
+				senhasegura=verdadeiro
+			}
+		}
+	}
+}
