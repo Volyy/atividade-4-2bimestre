@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numeros[5]
+		inteiro maiorNumero = 0
+		inteiro posicao = 0 
+		para(inteiro i = 0; i <= 4; i++)
+		{
+		escreva("Me diga um numero: ")
+		leia(numeros[i])
+		}
+		para(inteiro i = 0, maiorNumeroAtual = 0; i <= 4; i++)
+		{
+		se(numeros[i] > maiorNumeroAtual)
+		{
+			maiorNumeroAtual = numeros[i]
+			posicao = i
+		}
+		se(i == 4)
+		{
+			maiorNumero = maiorNumeroAtual
+		}
+		}
+		escreva("o maior numero eh ", maiorNumero ," na posiçao ", posicao)
+	}
+	
+	
+}
