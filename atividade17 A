@@ -1,0 +1,16 @@
+programa
+{
+	
+inteiro n1 = 0,n2 = 1
+	inteiro num = 0
+	funcao inicio()
+	{
+		enquanto(num < 500){
+			escreva(num , " ")
+			num=n1+n2
+			n2 = n1
+			n1 = num
+		
+		}
+	}
+}
