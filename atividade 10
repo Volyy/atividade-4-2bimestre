@@ -1,0 +1,17 @@
+programa
+{
+	
+inteiro cidadeA = 80000
+	inteiro cidadeB = 200000
+	inteiro anos = 0
+	funcao inicio()
+	{
+		enquanto (cidadeA < cidadeB){
+			cidadeA = cidadeA + (cidadeA*0.03)
+			cidadeB = cidadeB + (cidadeB*0.015)
+			anos++
+		}
+ 		escreva("o pais A precisa de ",anos," anos para passar ou igualar o pais B.")
+		
+	}
+}
