@@ -1,0 +1,48 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro quantnumeros = 0, numeros[100], maiorNumero = 0, menorNumero = 0
+		cadeia cont = ""
+		escreva("Adicione um numero a lista: ")
+		leia(numeros[0])
+		escreva("quer adicionar mais um numero?: ")
+		leia(cont)
+		para(inteiro i = 1; cont == "sim" e i != 99; i++)
+		{
+		quantnumeros++
+		escreva("Adicione um numero a lista: ")
+		leia(numeros[i])
+		escreva("quer adicionar mais um numero?: ")
+		leia(cont)
+		}
+
+		para(inteiro i = 0, maiorNumeroAtual = 0; i <= quantnumeros; i++)
+		{
+		se(numeros[i] > maiorNumeroAtual)
+		{
+			maiorNumeroAtual = numeros[i]
+		}
+		se(i == quantnumeros)
+		{
+			maiorNumero = maiorNumeroAtual
+		}
+		}
+
+		para(inteiro i = 0, menorNumeroAtual = maiorNumero; i <= quantnumeros; i++)
+		{
+		se(numeros[i] < menorNumeroAtual)
+		{
+			menorNumeroAtual = numeros[i]
+		}
+		se(i == quantnumeros)
+		{
+			menorNumero = menorNumeroAtual
+		}
+		
+		}
+		escreva("O menor numero eh: ", menorNumero, " O maior numero eh: ", maiorNumero)
+	}
+}
+	
