@@ -1,0 +1,18 @@
+programa
+{
+	
+inteiro numero
+	inteiro multi = 0
+	inteiro result 
+	funcao inicio()
+	{
+		escreva("escolha um numero: ")
+		leia(numero)
+          result = numero
+		para(inteiro multi=numero-1 ; 0 < multi; multi--){
+          result = result*multi
+		}
+		escreva(result)
+	}
+    
+}
