@@ -1,0 +1,18 @@
+programa
+{
+	
+inteiro n1 = 0, n2 = 1, num = 0
+	funcao inicio()
+	{
+	inteiro limite
+	escreva("Qual o valor maximo desejado?: ")
+	leia(limite)
+		para(inteiro i = 1; i <= limite ; i++)
+		{
+			escreva(num, " ")
+			num = n1 + n2
+			n2 = n1
+			n1 = num
+		}
+	}
+}
